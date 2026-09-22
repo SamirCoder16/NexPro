@@ -76,7 +76,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] selection:bg-white/20">
       <section className="relative flex flex-col items-center overflow-hidden px-4 pb-24 pt-40 text-center">
-        <HoleBackground
+        {/* <HoleBackground
           strokeColor="rgba(255, 255, 255, 0.05)"
           className="absolute inset-0 h-full w-full"
           style={{
@@ -85,7 +85,7 @@ export default function Home() {
             WebkitMaskImage:
               "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, transparent 100%)",
           }}
-        />
+        /> */}
         <Badge variant={"outline"} className="gap-2 p-4 backdrop-blur-sm">
           <div className="h-1.5 w-1.5 rounded-full animate-pulse bg-emerald-400" />
           Powered by Gemini 3.5 Flash
@@ -260,7 +260,7 @@ export default function Home() {
       </section>
 
       <section className="relative mx-auto mb-32 max-w-5xl overflow-hidden rounded-2xl border border-white/8 px-10 py-24 text-center">
-        <HoleBackground
+        {/* <HoleBackground
           strokeColor="rgba(255, 255, 255, 0.05)"
           className="absolute inset-0 h-full w-full"
           style={{
@@ -269,7 +269,7 @@ export default function Home() {
             WebkitMaskImage:
               "linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 50%, transparent 100%)",
           }}
-        />
+        /> */}
 
         <SectionHeading greyText="Start building" blueText="for free" />
 

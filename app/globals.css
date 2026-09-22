@@ -119,6 +119,7 @@
 
 @layer base {
   * {
+    scroll-behavior: smooth;
     @apply border-border outline-ring/50;
   }
   body {
@@ -126,5 +127,38 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      180deg,
+      #2563eb,
+      #06b6d4
+    );
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      180deg,
+      #3b82f6,
+      #22d3ee
+    );
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #2563eb #000;
   }
 }
